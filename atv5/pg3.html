@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>usuario</title>
+</head>
+<body bgcolor="#F5DEB3">
+  <h2><a href="/index.html">volte a pagina principal</a></h2>
+    <table style="width: 100%; height: 100vh">
+      <tr>
+        <td>
+          <table
+            style="
+              width: 50%;
+              margin: 0 auto;
+              padding: 20px;
+              background-color: #f0f0f0;
+            "
+          >
+            <tr>
+              <td>
+                <h1>Login</h1>
+                <form action="#" method="post">
+                  <p>
+                    <label for="usuario">Usuário:</label>
+                    <input
+                      type="text"
+                      id="usuario"
+                      name="usuario"
+                      required
+                    /><br />
+                  </p>
+                  <p>
+                    <label for="senha">Senha:</label>
+                    <input
+                      type="password"
+                      id="senha"
+                      name="senha"
+                      required
+                    /><br />
+                  </p>
+                  <p>
+                    <label>Tipo de Conta:</label><br />
+                    <input
+                      type="radio"
+                      id="conta-gratuita"
+                      name="tipo-conta"
+                      value="gratuita"
+                      checked
+                    />
+                    <label for="conta-gratuita">Conta Gratuita</label><br />
+                    <input
+                      type="radio"
+                      id="conta-premium"
+                      name="tipo-conta"
+                      value="premium"
+                    />
+                    <label for="conta-premium">Conta Premium</label><br />
+                  </p>
+
+                  <p>
+                    <a href="/atv5/pg2.html"
+                      ><input type="button" value="voltar"
+                    /></a>
+                    <a href="/atv5/pg4.html"
+                      ><input type="submit" value="Entrar"
+                    /></a>
+                  </p>
+                </form>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
