@@ -26,6 +26,8 @@ body {
     width: 90%;
     /* Largura do contêiner */
     text-align: justify;
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
 }
 
 /* Estilo para o título principal */
