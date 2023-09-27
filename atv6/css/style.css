@@ -1,0 +1,39 @@
+/* style.css */
+
+/* Estilo para o título principal */
+h1 {
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+/* Estilo para o parágrafo principal */
+p {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px;
+}
+
+/* Estilo para a lista ordenada */
+ol {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin-left: 30px;
+}
+
+/* Estilo para os itens da lista ordenada */
+ol li {
+    margin: 10px 0;
+}
+
+/* Estilo para os links */
+a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+/* Estilo para os links quando o mouse está sobre eles */
+a:hover {
+    text-decoration: underline;
+}
