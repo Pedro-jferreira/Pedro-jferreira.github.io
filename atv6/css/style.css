@@ -2,24 +2,28 @@
 
 /* Estilo para o título principal */
 h1 {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
     color: #333;
     text-align: center;
+    font-size: 36px;
+    margin-top: 30px;
 }
 
 /* Estilo para o parágrafo principal */
 p {
-    font-family: Georgia, serif;
+    font-family: 'Georgia', serif;
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.6;
     margin: 20px;
+    text-align: justify;
 }
 
 /* Estilo para a lista ordenada */
 ol {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 16px;
     margin-left: 30px;
+    padding-left: 15px;
 }
 
 /* Estilo para os itens da lista ordenada */
@@ -31,9 +35,18 @@ ol li {
 a {
     color: #0073e6;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 /* Estilo para os links quando o mouse está sobre eles */
 a:hover {
+    color: #0055a5;
     text-decoration: underline;
+}
+
+/* Estilo para o corpo da página */
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
 }
