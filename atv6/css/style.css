@@ -1,31 +1,23 @@
 /* style.css */
 
-/* Defina o fundo da página */
+/* Estilo para o corpo da página */
 body {
     background-color: #F5DEB3;
-    /* Cor de fundo amarelo claro */
+    /* Fundo amarelo claro */
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
-/* Estilo para o contêiner do texto */
+/* Estilo para o contêiner de todo o texto */
 .container {
     background-color: #f0f0f0;
     /* Cor de fundo cinza */
     padding: 20px;
     border-radius: 10px;
     /* Bordas arredondadas */
+    margin: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     /* Sombra suave */
-    max-width: 800px;
-    /* Largura máxima do contêiner */
-    width: 90%;
-    /* Largura do contêiner */
-    text-align: justify;
 }
 
 /* Estilo para o título principal */
@@ -42,6 +34,7 @@ p {
     font-family: 'Georgia', serif;
     font-size: 18px;
     line-height: 1.6;
+    text-align: justify;
 }
 
 /* Estilo para a lista ordenada */
@@ -64,8 +57,4 @@ a {
     transition: color 0.3s ease;
 }
 
-/* Estilo para os links quando o mouse está sobre eles */
-a:hover {
-    color: #0055a5;
-    text-decoration: underline;
-}
+/* Estilo
