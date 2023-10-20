@@ -6,25 +6,35 @@
     <title>Document</title>
     <link rel="stylesheet" href="/atv6/css/style.css" />
   </head>
-  <body>
-    <h1>CSS: Estilizando a Web com Elegância</h1>
+  <body class="body">
+    <nav id="menu"></nav>
+    <script>
+      fetch("/menu/menu.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("menu").innerHTML = data;
+        });
+    </script>
 
-    <p>
-      O CSS, ou Cascading Style Sheets, é uma linguagem fundamental para a
-      construção e design de páginas da web. Ele desempenha um papel crucial na
-      definição da aparência e do layout dos elementos em uma página da web,
-      permitindo que os desenvolvedores criem experiências visuais atraentes e
-      consistentes para os usuários.
-    </p>
-    <p>
-      Em sua essência, o CSS é uma linguagem de estilo que separa o conteúdo
-      estrutural (HTML) do estilo visual. Isso significa que, com o CSS, é
-      possível definir como os elementos HTML devem ser apresentados sem alterar
-      sua estrutura subjacente. Isso oferece uma série de benefícios, incluindo
-      a capacidade de:
-    </p>
+    <div class="inicio">
+      <h1>CSS: Estilizando a Web com Elegância</h1>
+      <p>
+        O CSS, ou Cascading Style Sheets, é uma linguagem fundamental para a
+        construção e design de páginas da web. Ele desempenha um papel crucial
+        na definição da aparência e do layout dos elementos em uma página da
+        web, permitindo que os desenvolvedores criem experiências visuais
+        atraentes e consistentes para os usuários.
+      </p>
+      <p>
+        Em sua essência, o CSS é uma linguagem de estilo que separa o conteúdo
+        estrutural (HTML) do estilo visual. Isso significa que, com o CSS, é
+        possível definir como os elementos HTML devem ser apresentados sem
+        alterar sua estrutura subjacente. Isso oferece uma série de benefícios,
+        incluindo a capacidade de:
+      </p>
+    </div>
 
-    <ol>
+    <ol class="ol">
       <li>
         Personalização Visual: O CSS permite que os desenvolvedores personalizem
         cores, fontes, tamanhos, espaçamento e outros aspectos visuais de uma
@@ -58,7 +68,7 @@
         de forma separada com o CSS.
       </li>
     </ol>
-    <p>
+<div class="fim">    <p>
       O CSS utiliza seletores para identificar os elementos HTML aos quais os
       estilos serão aplicados e propriedades para definir como esses elementos
       devem ser estilizados. As regras CSS são escritas em um arquivo separado
@@ -74,6 +84,6 @@
       que mantêm o código organizado e eficiente. Com um domínio adequado do
       CSS, é possível criar websites que não apenas funcionam bem, mas também
       cativam os visitantes com seu design elegante e estilizado.
-    </p>
+    </p></div>
   </body>
 </html>

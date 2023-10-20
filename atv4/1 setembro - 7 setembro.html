@@ -5,11 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>modelo de listas</title>
+
 </head>
 
 
 <body bgcolor="#F5DEB3">
-    <h2><a href="/index.html"> volte a pagina inicial</a></h2>
+      <nav id="menu"></nav>
+	<script>
+		fetch('/menu/menu.html')
+			.then(response => response.text())
+			.then(data => {
+				document.getElementById('menu').innerHTML = data;
+			});
+	</script>
+    <h2><a href="/menu/index.html"> volte a pagina inicial</a></h2>
     <table style="height: 20%; margin: 50 auto; padding: 5px; background-color: #f0f0f0;">
         <tr>
             <td>
@@ -48,7 +57,7 @@
                                 <li>Item 6 - Raça 6: Sphynx</li>
                                 <li>Item 7 - Raça 7: British Shorthair</li>
                                 <li>Item 8 - Raça 8: Scottish Fold</li>
-                                <li><a href="/index.html">Volte à Página Principal</a></li>
+                                <li><a href="/menu/index.html">Volte à Página Principal</a></li>
                                 <li><img src="img/Fotos-gato-ramo-natureza-equilibrio.webp" alt="um gato na natureza"
                                         align="middle" width="600"></li>
                             </ul>
@@ -91,7 +100,7 @@
                                 <ul>
                                     <li>&#9679; Outro Marcador</li>
                                 </ul>
-                                <li><a href="/index.html">Volte à Página Principal</a></li>
+                                <li><a href="/menu/index.html">Volte à Página Principal</a></li>
                                 <li><img src="img/Fotos-gato-ramo-natureza-equilibrio.webp" alt="um gato na natureza"
                                         align="middle" width="600"></li>
                             </ul>
@@ -110,7 +119,7 @@
                                 <li>Item 6 - Raça 6: Sphynx</li>
                                 <li>Item 7 - Raça 7: British Shorthair</li>
                                 <li>Item 8 - Raça 8: Scottish Fold</li>
-                                <li><a href="/index.html">Volte à Página Principal</a></li>
+                                <li><a href="/menu/index.html">Volte à Página Principal</a></li>
                                 <li><img src="img/Fotos-gato-ramo-natureza-equilibrio.webp" alt="um gato na natureza"
                                         align="middle" width="600"></li>
                             </ol>
@@ -130,7 +139,7 @@
 
                                 </li>
                                 <li>8. Raça 8: Scottish Fold</li>
-                                <li><a href="/index.html">Volte à Página Principal</a></li>
+                                <li><a href="/menu/index.html">Volte à Página Principal</a></li>
                                 <li><img src="img/Fotos-gato-ramo-natureza-equilibrio.webp" alt="um gato na natureza"
                                         align="middle" width="600"></li>
                             </ol>
@@ -166,12 +175,12 @@
                                 <dt>Termo 8 - Raça 8: Scottish Fold</dt>
                                 <dd>Definição 8</dd>
 
-                                <dt><a href="/index.html">Volte à Página Principal</a></dt>
+                                <dt><a href="/menu/index.html">Volte à Página Principal</a></dt>
                                 <dd><img src="img/Fotos-gato-ramo-natureza-equilibrio.webp" alt="um gato na natureza"
                                         align="middle" width="600"></dd>
                             </dl>
                             <p><a href="#topo">Voltar ao topo da página</a></p>
-                            <h2><a href="/index.html"> volte a pagina inicial</a></h2>
+                            <h2><a href="/menu/index.html"> volte a pagina inicial</a></h2>
 
 
                         </td>

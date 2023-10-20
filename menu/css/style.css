@@ -1,0 +1,137 @@
+script {
+    margin: o;
+}
+
+body {
+    margin: 0;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    transition: all .5s;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.navv {
+    background-color: gray;
+    justify-content: space-between;
+    align-items: center;
+        border-bottom: black 3px solid;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.logo h1,
+.menu p {
+    color: #fff;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: black;
+    background: #fff;
+}
+
+.navv {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.logo h1 {
+
+    padding: 20px 20px;
+
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 36px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+}
+
+.menu a:hover,
+.logo h1:hover,
+button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+
+
+}
+
+button:focus~.menu {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 20px;
+   
+
+}
+
+button:focus~.navv{
+     transition: 2s;
+     height: 100%;
+}
+button:focus~.menu li {
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: center;
+    transition: 2s;
+}
+
+
+@media (max-width: 700px) {
+
+    .navv,
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu {
+        margin: 0;
+        height: 0;
+    }
+
+    .navv {
+        padding-top: 0px;
+        align-items: flex-start;
+    }
+
+    .logo h1 {
+        margin: 10px;
+    }
+
+    button {
+        display: flex;
+    }
+
+    .menu a {
+        flex: 80%;
+        width: 100%;
+        padding: 10px 90px;
+
+
+
+    }
+
+    .menu {
+        width: 100%;
+        text-align: center;
+    }
+}

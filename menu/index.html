@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>trabalhos</title>
+  </head>
+  <body>
+    <nav id="nav">
+      <script>
+        fetch("/menu/menu.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("nav").innerHTML = data;
+          });
+      </script>
+    </nav>
+    <div class="img">
+      <img src="css/ilustrasi6.png" alt="" />
+    </div>
+  </body>
+</html>

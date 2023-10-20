@@ -16,8 +16,15 @@
 
 <body bgcolor="#f5f5f5"> <!-- A tag <body> é usada para definir o conteúdo principal da página HTML, o atributo bgcolor 
     era usado no passado para definir a cor de fundo do corpo da página -->
-
-    <h2><a href="/index.html">volte a pagina principal</a></h2>
+<nav id="menu"></nav>
+	<script>
+		fetch('/menu/menu.html')
+			.then(response => response.text())
+			.then(data => {
+				document.getElementById('menu').innerHTML = data;
+			});
+	</script>
+    <h2><a href="/menu/index.html">volte a pagina principal</a></h2>
 
     <!-- Parágrafo com formatação -->
     <p><!--A tag <p> é usada para definir um parágrafo de texto em HTML. -->

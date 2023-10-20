@@ -7,7 +7,16 @@
     <title>angular</title>
 </head>
 
-<body><h2><a href="/index.html">volte a pagina principal</a></h2>
+<body>
+      <nav id="menu"></nav>
+	<script>
+		fetch('/menu/menu.html')
+			.then(response => response.text())
+			.then(data => {
+				document.getElementById('menu').innerHTML = data;
+			});
+	</script>
+    <h2><a href="/menu/index.html">volte a pagina principal</a></h2>
     <table style="height: 20%; margin: 50 auto; padding: 5px; background-color: #f0f0f0;">
         <tr>
             <td>

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Playpen Sans', cursive;
+}
+
+@keyframes animacao {
+
+    0% {
+
+        background: #ECC8C2;
+        width: 0%;
+
+
+
+    }
+    50%{
+        background: rgb(179, 117, 238);
+    }
+
+
+
+    100% {
+        background: #ECC8C2;
+        width: 80%;
+        transition: 2s;
+
+    }
+}
+@keyframes digitando{
+    from{
+       margin-left: 50%;
+        width: 0;
+    }
+}
+@keyframes pisca{
+    50%{
+        border-color: transparent;
+    }
+}
+
+.title {
+    
+    text-align: center;
+    margin-left: 20% ;
+    border-right: 4px solid;
+    width: 60ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: digitando 2s steps(41),pisca 0.5s infinite;
+
+}
+
+.work {
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+    background: #ECC8C2;
+    border-radius: 25px;
+    transition: 5s;
+
+    margin-left: 7%;
+    margin-right: 7%;
+    list-style: none;
+    padding: 30px;
+    animation: animacao 2s;
+
+
+}
+
+.work li {
+
+    text-align: justify;
+
+}
+
+.work li li {
+
+    padding: 10px;
+}
+
+.work ol,
+.work ul {
+    background: #FFEAD7;
+    border-radius: 15px;
+    margin-left: 15%;
+    margin-right: 10%;
+}
+
+.work li h2 {
+    text-align: center;
+    padding: 30px;
+}
+
+.work li h3 {
+
+    text-align: left;
+    margin: 20px;
+    width: 100%;
+
+}

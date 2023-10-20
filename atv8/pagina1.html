@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/atv8/css/style.css" />
+  </head>
+  <body>
+    <nav id="nav">
+      <script>
+        fetch("/menu/menu.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("nav").innerHTML = data;
+          });
+      </script>
+    </nav>
+
+    <div class="title">
+      <h1>apresentação dos projetos finais de web 1</h1>
+    </div>
+
+    <ol class="work">
+      <li>
+        <h2>
+          Desenvolvimento do Site da Agência de Marketing "Digital Sphere
+          Solutions"
+        </h2>
+
+        <h3>Visão Geral:</h3>
+
+        <p>
+          O site Digital Sphere Solutions é um projeto web que utiliza HTML, CSS
+          e JavaScript puro para criar uma experiência atraente e interativa. A
+          seguir, apresento uma visão geral das principais funcionalidades do
+          site:
+        </p>
+
+        <ol>
+          <li>
+            <h4>Página Inicial:</h4>
+            A página inicial cumprimenta os visitantes com uma mensagem de
+            boas-vindas, e destaca nossos principais serviços e recursos.
+          </li>
+          <li>
+            <h4>Serviços:</h4>
+            Uma seção dedicada a detalhar os serviços que oferecemos, incluindo
+            marketing digital, publicidade online, otimização de mecanismos de
+            busca (SEO) e gestão de redes sociais.
+          </li>
+          <li>
+            <h4>Portfólio:</h4>
+            Esta seção exibe exemplos de trabalhos anteriores, mostrando nosso
+            histórico de sucesso em campanhas de marketing.
+          </li>
+          <li>
+            <h4>Equipe:</h4>
+            Aqui, os visitantes podem conhecer a equipe da [Nome da Agência],
+            com informações sobre membros da equipe, suas funções e
+            experiências.
+          </li>
+          <li>
+            <h4>depoimentos:</h4>
+            Implementamos um carrossel de depoimentos de clientes satisfeitos
+            para construir confiança com os visitantes.
+          </li>
+          <li>
+            <h4>Formulário de Contato:</h4>
+            Um formulário de contato que permite que os visitantes entrem em
+            contato conosco diretamente por meio do site.
+          </li>
+        </ol>
+
+        <h3>Tecnologias Utilizadas:</h3>
+
+        <ul>
+          <li>
+            <h4>HTML, CSS e JavaScript:</h4>
+            Utilizados para a criação da estrutura, estilo e interatividade do
+            site.
+          </li>
+          <li>
+            <h4>Responsividade:</h4>
+            O site é totalmente responsivo para garantir que funcione bem em
+            dispositivos móveis e desktops.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h2>Desenvolvimento do Portfólio Pessoal</h2>
+        <h3>Visão Geral:</h3>
+
+        <p>
+          Meu portfólio pessoal é um projeto web que utiliza o framework Angular
+          para criar uma experiência interativa e informativa. Aqui estão os
+          principais elementos do projeto:
+        </p>
+
+        <ol>
+          <li>
+            <h4>Página Inicial:</h4>
+            A página inicial apresenta uma breve introdução sobre mim e destaca
+            minhas principais competências.
+          </li>
+          <li>
+            <h4>Portfólio:</h4>
+            Nesta seção, apresento uma lista de projetos em que trabalhei,
+            incluindo links para os projetos no GitHub e uma breve descrição do
+            meu papel em cada um deles.
+          </li>
+          <li>
+            <h4>APIs Desenvolvidas:</h4>
+            Criei páginas dedicadas para cada uma das APIs que desenvolvi. Cada
+            página detalha o propósito da API, tecnologias utilizadas,
+            documentação e exemplos de uso.
+          </li>
+          <li>
+            <h4>Currículo:</h4>
+            Disponibilizo meu currículo em formato PDF para download.
+          </li>
+          <li>
+            <h4>Formulário de Contato:</h4>
+            Um formulário de contato que permite que os visitantes entrem em
+            contato comigo diretamente por meio do site.
+          </li>
+        </ol>
+
+        <h3>Tecnologias Utilizadas:</h3>
+
+        <ul>
+          <li>
+            <h4>Angular:</h4>
+            Utilizado como o framework principal para o desenvolvimento do site.
+          </li>
+          <li>
+            <h4>HTML, CSS, e TypeScript:</h4>
+            Usados para criar a estrutura, estilização e funcionalidade do site.
+          </li>
+        </ul>
+      </li>
+    </ol>
+  </body>
+</html>
