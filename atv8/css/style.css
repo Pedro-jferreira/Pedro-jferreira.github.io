@@ -41,15 +41,23 @@
 }
 
 .title {
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+   
+
+}
+.tt{
     text-align: center;
-    margin-left: 20% ;
+    color: aliceblue;
     border-right: 4px solid;
-    width: 60ch;
+    width: 29ch;
     white-space: nowrap;
     overflow: hidden;
-    animation: digitando 2s steps(41),pisca 0.5s infinite;
-
+    animation: digitando 2s steps(41), pisca 0.5s infinite;
+    animation-delay: 0s;
+    color: black;
 }
 
 .work {
